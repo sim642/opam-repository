@@ -42,7 +42,7 @@ build: [
 ]
 post-messages:
   "If the build fails with \"ocamlopt.opt got signal and exited\", issue 'ulimit -s unlimited' and retry."
-    {failure & (arch = "ppc64" | arch = "arm64")}
+    {failure & (arch = "x86_64" | arch = "ppc64" | arch = "arm64")}
 dev-repo: "git+https://erratique.ch/repos/uucp.git"
 url {
   src: "https://erratique.ch/software/uucp/releases/uucp-16.0.0.tbz"
